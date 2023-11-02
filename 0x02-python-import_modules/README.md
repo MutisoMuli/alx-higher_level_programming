@@ -1,3 +1,4 @@
+![Python Logo](https://www.python.org/static/community_logos/python-logo.png)
 # Python - import & modules
 
 In this project, I learned about importing and using functions and creating
