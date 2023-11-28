@@ -1,0 +1,17 @@
+........F.
+======================================================================
+FAIL: test_string (tests.6-max_integer_test.TestMaxInteger)
+Test a string.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mutiso/alx-higher_level_programming/0x07-python-test_driven_development/tests/6-max_integer_test.py", line 49, in test_string
+    self.assertEqual(max_integer(string), 'r')
+AssertionError: 'o' != 'r'
+- o
++ r
+
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.001s
+
+FAILED (failures=1)
