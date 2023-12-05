@@ -15,6 +15,7 @@ my_dict = {
         'age': 36,
         'average': 3.14
     }
+}
 s_my_dict = to_json_string(my_dict)
 print(s_my_dict)
 print(type(s_my_dict))
@@ -25,4 +26,4 @@ try:
     print(s_my_set)
     print(type(s_my_set))
 except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))}
+    print("[{}] {}".format(e.__class__.__name__, e))
