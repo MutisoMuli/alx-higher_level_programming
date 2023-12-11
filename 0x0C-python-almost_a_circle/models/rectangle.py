@@ -113,9 +113,9 @@ class Rectangle(Base):
     def area(self):
         """Method that returns the area of the rectangle object
         Args:
-           No arguments
+           Not arguments
         Return:
-           Areaof the rectangle object
+           Area of the rectangle object
         """
         return self.width * self.height
 
@@ -131,8 +131,9 @@ class Rectangle(Base):
     def __str__(self):
         """Method that override str method
         """
-        return ("[Rectangle] ({}) {}/{}".format(self.id, self.x, self.y,
-                self.width, self.height))
+        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x,
+                                                        self.y, self.width,
+                                                        self.height))
 
     def update(self, *args, **kwargs):
         """Method that changed the order of arguments for rectangle object

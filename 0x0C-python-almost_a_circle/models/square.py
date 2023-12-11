@@ -9,7 +9,7 @@ class Square(Rectangle):
     def __init__(self, size, x=0, y=0, id=None):
         """Method that initialized the square
         Args:
-           size: size of side's of the square
+           size: side's size of the square
            x: Position on x axis.
            y: Position on y axis.
         Return:
@@ -19,37 +19,31 @@ class Square(Rectangle):
 
     def __str__(self):
         """Method that returns a string"""
-        return ("[Square] ({}) {}/{} - {}".format(self.id, self.x,
-                                                  self.y, self.width))
+        return ("[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
+                                                  self.width))
 
     @property
     def size(self):
-        """Getter for the size of the square
+        """Getter the size of the square
         """
         return self.width
-        return self.height
 
     @size.setter
     def size(self, value):
         """Setter the size of the square
         Args:
-           value: size to assign
+           value: Size to assign
         Return:
-           Always nothing
+           Always Nothing
         """
-        if type(value) is not int:
-            raise TypeError("width must be an integer")
-        elif value <= 0:
-            raise ValueError("width must be >0")
-        else:
-            self.__width = value
-            self.__height = value
+        self.width = value
+        self.heigth = value
 
     def update(self, *args, **kwargs):
         """Method that update arguments for square object
         Args:
            *args: list of arguments.
-           **kwargs: dictionary of the arguments.
+           **kwargs: Dictionary of the arguments.
         Return:
            Always nothing
         """
@@ -71,7 +65,7 @@ class Square(Rectangle):
 
     def to_dictionary(self):
         """Method that returns the dictionary
-            representation of a square
+           representation of a Square.
         """
         dict_order = ['id', 'x', 'size', 'y']
         dict_attrs = {}
