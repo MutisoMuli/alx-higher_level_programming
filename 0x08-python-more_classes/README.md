@@ -1,1 +1,4 @@
-0x08. Python - More Classes and Objects
+## More Classes in Python
+
+ ## Author
+ © [MutisoMuli](https://github.com/MutisoMuli)
