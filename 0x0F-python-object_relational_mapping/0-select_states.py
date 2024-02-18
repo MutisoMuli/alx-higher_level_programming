@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
 Script that lists all states from the database hbtn_0e_0_usa
-Script should take 3 arguments: mysql username, mysql password and database name
+Script should take 3 arguments: mysql username, mysql
+password and database name
 Uses the module MySQLdb
 Connects to a MySQL server running on localhost at port 3306
 Results are sorted in ascending order by states.id
@@ -19,4 +20,3 @@ if __name__ == '__main__':
 
     for row in rows_selected:
         print(row)
-
